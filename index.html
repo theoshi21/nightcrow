@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Nightcrow Calculator by Kelvin </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> Nightcrow Token Calculator</h1>
+
+    <div id="inputCrowDia">
+        <label> <img src="crow.png"> CROW </label> 
+        <input type="number" id="crow_price" placeholder="ex: 0.75" class="clean-input" style="margin-right: 2vw;">
+
+        <label> <img src="diamonds.png"> CURRENT DIA</label>
+        <input type="number" id="curr_dia" placeholder = "ex: 1" class="clean-input"> 
+    </div>
+
+    <table>
+        <tr>
+            <td class="token" style="background-color: black; color: white"> TYPE </td>
+            <td class="token morion" style="background-color: #FFE375">
+                <div class="token-content">
+                    <img src="MORION.png" alt="MORION">
+                    MORION
+                </div>
+            </td>
+            <td class="token feather" style="background-color: #45b0e1">
+                <div class="token-content">
+                    <img src="FEATHER.png" alt="FEATHER">
+                    FEATHER
+                </div>
+            </td>
+            <td class="token tear" style="background-color: #d76dcc">
+                <div class="token-content">
+                    <img src="TEAR.png" alt="TEAR">
+                    TEAR
+                </div>
+            </td>
+            <td class="token gear" style="background-color: #9966ff">
+                <div class="token-content">
+                    <img src="GEAR.png" alt="GEAR">
+                    GEAR
+                </div>
+            </td>
+            <td class="token hsoa" style="background-color: #e49edd">
+                <div class="token-content">
+                    <img src="PROMOTE.png" alt="PROMOTE">
+                    PROMOTE
+                </div>
+            </td>
+            <td class="token papyrus" style="background-color: #3a7d22">
+                <div class="token-content">
+                    <img src="PAPYRUS.png" alt="PAPYRUS">
+                    PAPYRUS
+                </div>
+            </td>
+        </tr>
+
+        <tr id="dia_market">
+            <td class="tdInput" style="background: #fae2d5; font-weight: bold;"> DIAMOND MARKET</td>
+            <td class="tdInput"> <input type="number" id="market0" class="inputs"> </td>
+            <td class="tdInput"> <input type="number" id="market1" class="inputs"> </td>
+            <td class="tdInput"> <input type="number" id="market2" class="inputs"> </td>
+            <td class="tdInput"> <input type="number" id="market3" class="inputs"> </td>
+            <td class="tdInput"> <input type="number" id="market4" class="inputs"> </td>
+            <td class="tdInput"> <input type="number" id="market5" class="inputs"> </td>
+        </tr>
+
+        <tr id="crow_equiv">
+            <td class="tdInput" style="background: #fae2d5; font-weight: bold;"> CROW EQUIVALENT</td>
+            <td class="tdInput"> <input type="number" id="crow_equiv0" class="inputs"> </td>
+            <td class="tdInput"> <input type="number" id="crow_equiv1" class="inputs"> </td>
+            <td class="tdInput"> <input type="number" id="crow_equiv2" class="inputs"> </td>
+            <td class="tdInput"> <input type="number" id="crow_equiv3" class="inputs"> </td>
+            <td class="tdInput"> <input type="number" id="crow_equiv4" class="inputs"> </td>
+            <td class="tdInput"> <input type="number" id="crow_equiv5" class="inputs"> </td>
+        </tr>
+
+        <tbody id="computedVal">
+        </tbody>
+    </table>
+
+    <button id="calculate" onclick="calculate()"> Calculate </button>
+
+</body>
+
+<script src="script.js"></script>
+</html>
